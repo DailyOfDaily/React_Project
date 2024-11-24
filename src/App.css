@@ -1,0 +1,210 @@
+
+/* ↓↓↓↓↓ About 페이지 스타일 ↓↓↓↓↓ */
+.hidden{
+  opacity: 1 !important;
+  filter: blur(5px) !important;
+  transform: translateX(-100%) !important;
+  transition: all 1s !important;
+}
+.show{
+  opacity: 1 !important;
+  filter: blur(0) !important;
+  transform: translateX(0) !important; 
+}
+.header_left_intro{
+  margin-top: 74px;
+  color: #ffae00;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.header_left_introduce{
+  margin-top: 18px;
+  font-family: Pretendard;
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+}
+.header_left_introduce_body_container{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.header_left_introduce_body{
+  margin: none;
+  color: #363636;
+  font-family: Pretendard;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 200;
+}
+.btn_header{
+  font-family: Pretendard;
+  padding: 12px 64px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  background: green;
+  color: white;
+  border: none;
+  width: 210px;
+}
+
+/* ↑↑↑↑↑ About 페이지 스타일 ↑↑↑↑↑ */
+
+/* 리액트 부트스트랩의 Card에 기본적으로 적용되는 css로 인해 Card.title 태그로 사용하려면 css에 !important를 사용해야 한다. */
+.title {
+  margin-top: 10px !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  margin-bottom: 4px !important;
+}
+
+/* 위의  */
+.atitle {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.project_header {
+  color: #25282B;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 72px;
+}
+
+.hr {
+  width: 100px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #FDC435;
+}
+
+.project_header_container {
+  margin-top: 120px;
+  margin-bottom: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.carousel-item-custom {
+  background-color: #c6d6e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 550px;
+}
+
+.carousel-item-custom img {
+  height: 550px;
+  object-fit: cover;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.nav-link {
+  color: rgb(255, 255, 255) !important;
+  font-weight: bold !important;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.nav-link:last-child {
+    margin-right: 0; /* Remove right margin from the last link */
+}
+
+
+
+/* 전체 레이아웃 */
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* 화면 전체 높이 */
+}
+
+/* 콘텐츠 영역 */
+.app-wrapper > *:first-child {
+  flex: 1; /* 나머지 공간을 채우는 콘텐츠 */
+}
+
+
+/* 전체 레이아웃을 flex로 설정 */
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 97px); /* 화면 전체 높이에서 60px 제외 */
+}
+
+
+
+
+/* AboutPage 레이아웃 */
+.aboutpage-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.detailpage-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+
+/* 푸터 스타일 */
+footer {
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  border-top: 1px solid #ddd;
+}
+
